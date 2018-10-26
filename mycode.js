@@ -10,7 +10,6 @@ button.addEventListener('click', function(event){
     .then(function(response) {
         return response.json();
     })
-
     .then(function(data) {
     var lyrics = document.getElementById('lyrics');
     lyrics.innerHTML = data.lyrics;
